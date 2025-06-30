@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Care4YouthWebsite/static/css/main.f855e6bc.css",
-    "main.js": "/Care4YouthWebsite/static/js/main.bc9f69c6.js",
+    "main.css": "/Care4YouthWebsite/static/css/main.b0af69a1.css",
+    "main.js": "/Care4YouthWebsite/static/js/main.30a20888.js",
     "static/js/453.934a235b.chunk.js": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js",
-    "static/media/logo.svg": "/Care4YouthWebsite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Care4YouthWebsite/index.html",
-    "main.f855e6bc.css.map": "/Care4YouthWebsite/static/css/main.f855e6bc.css.map",
-    "main.bc9f69c6.js.map": "/Care4YouthWebsite/static/js/main.bc9f69c6.js.map",
+    "main.b0af69a1.css.map": "/Care4YouthWebsite/static/css/main.b0af69a1.css.map",
+    "main.30a20888.js.map": "/Care4YouthWebsite/static/js/main.30a20888.js.map",
     "453.934a235b.chunk.js.map": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.bc9f69c6.js"
+    "static/css/main.b0af69a1.css",
+    "static/js/main.30a20888.js"
   ]
 }
