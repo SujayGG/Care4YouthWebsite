@@ -29,7 +29,7 @@ const NewsletterSignup = () => {
   const handleCloseSnackbar = () => setSnackbar({ ...snackbar, open: false });
 
   return (
-    <Box sx={{ p: 3, backgroundColor: 'white', borderRadius: 2, boxShadow: '0 4px 16px rgba(30,64,175,0.08)', textAlign: 'center' }}>
+    <Box className="newsletter-signup" sx={{ p: 3, backgroundColor: 'white', borderRadius: 2, boxShadow: '0 4px 16px rgba(30,64,175,0.08)', textAlign: 'center' }}>
       <Typography variant="h6" sx={{ mb: 2, color: '#1e40af', fontWeight: 700 }}>
         Subscribe to Our Newsletter
       </Typography>

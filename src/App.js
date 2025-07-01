@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import { AppBar, Toolbar, Button, Container, Typography, Box } from '@mui/material';
+import { AppBar, Toolbar, Button, Container, Typography, Box, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Menu } from '@mui/icons-material';
 import Home from './Home';
 import About from './About';
 import Donate from './Donate';
@@ -12,6 +13,7 @@ import DonorWall from './components/DonorWall';
 import EventCalendar from './components/EventCalendar';
 import ResourceLibrary from './components/ResourceLibrary';
 import PWAInstallPrompt from './components/PWAInstallPrompt';
+import PerformanceMonitor from './components/PerformanceMonitor';
 import care4youthLogo from './care4youth-logo.svg';
 import './App.css';
 import { HelmetProvider } from 'react-helmet-async';
@@ -95,28 +97,96 @@ const theme = createTheme({
 });
 
 function App() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Use window resize listener for more reliable mobile detection
+  React.useEffect(() => {
+    let timeoutId;
+    
+    const checkMobile = () => {
+      const mobile = window.innerWidth < 900;
+      setIsMobile(mobile);
+    };
+    
+    const debouncedCheckMobile = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(checkMobile, 100);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', debouncedCheckMobile);
+    
+    return () => {
+      window.removeEventListener('resize', debouncedCheckMobile);
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const navigationItems = [
+    { text: 'Home', path: '/' },
+    { text: 'About', path: '/about' },
+    { text: 'Programs', path: '/programs' },
+    { text: 'Volunteer', path: '/volunteer' },
+    { text: 'Events', path: '/events' },
+    { text: 'Resources', path: '/resources' },
+  ];
+
+  const drawer = (
+    <Box sx={{ width: 250, pt: 2 }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', px: 2, mb: 2 }}>
+        <img 
+          src={care4youthLogo} 
+          alt="Care4Youth Logo" 
+          style={{ height: 32, marginRight: 12, objectFit: 'contain' }} 
+        />
+        <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#1e40af' }}>
+          Care4Youth
+        </Typography>
+      </Box>
+      <List>
+        {navigationItems.map((item) => (
+          <ListItem 
+            key={item.text} 
+            component={Link} 
+            to={item.path}
+            onClick={handleDrawerToggle}
+            sx={{ 
+              color: 'text.primary',
+              '&:hover': { 
+                backgroundColor: 'rgba(30, 64, 175, 0.05)',
+                color: 'primary.main'
+              } 
+            }}
+          >
+            <ListItemText primary={item.text} />
+          </ListItem>
+        ))}
+        <ListItem sx={{ mt: 2 }}>
+          <DonateButton sx={{ width: '100%' }}>
+            Donate Now
+          </DonateButton>
+        </ListItem>
+      </List>
+    </Box>
+  );
+
   // Register service worker for PWA functionality
   React.useEffect(() => {
-    serviceWorker.register({
-      onUpdate: registration => {
-        const waitingServiceWorker = registration.waiting;
-        if (waitingServiceWorker) {
-          waitingServiceWorker.addEventListener("statechange", event => {
-            if (event.target.state === "activated") {
-              window.location.reload();
-            }
-          });
-          waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
-        }
-      }
-    });
+    if (process.env.NODE_ENV === 'production') {
+      serviceWorker.register();
+    }
   }, []);
 
   return (
     <HelmetProvider>
       <ThemeProvider theme={theme}>
         <Router>
-          <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', overflowX: 'hidden', width: '100%' }}>
             {/* Enhanced Navigation Bar */}
             <AppBar 
               position="sticky" 
@@ -150,106 +220,71 @@ function App() {
                   </Typography>
                 </Box>
                 
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                  <Button 
-                    color="primary" 
-                    component={Link} 
-                    to="/"
-                    sx={{ 
-                      fontWeight: 'medium',
-                      color: 'text.primary',
-                      '&:hover': { 
-                        backgroundColor: 'rgba(30, 64, 175, 0.05)',
-                        color: 'primary.main'
-                      } 
-                    }}
-                  >
-                    Home
-                  </Button>
-                  <Button 
-                    color="primary" 
-                    component={Link} 
-                    to="/about"
-                    sx={{ 
-                      fontWeight: 'medium',
-                      color: 'text.primary',
-                      '&:hover': { 
-                        backgroundColor: 'rgba(30, 64, 175, 0.05)',
-                        color: 'primary.main'
-                      } 
-                    }}
-                  >
-                    About
-                  </Button>
-                  <Button 
-                    color="primary" 
-                    component={Link} 
-                    to="/programs"
-                    sx={{ 
-                      fontWeight: 'medium',
-                      color: 'text.primary',
-                      '&:hover': { 
-                        backgroundColor: 'rgba(30, 64, 175, 0.05)',
-                        color: 'primary.main'
-                      } 
-                    }}
-                  >
-                    Programs
-                  </Button>
-                  <Button 
-                    color="primary" 
-                    component={Link} 
-                    to="/volunteer"
-                    sx={{ 
-                      fontWeight: 'medium',
-                      color: 'text.primary',
-                      '&:hover': { 
-                        backgroundColor: 'rgba(30, 64, 175, 0.05)',
-                        color: 'primary.main'
-                      } 
-                    }}
-                  >
-                    Volunteer
-                  </Button>
-                  <Button 
-                    color="primary" 
-                    component={Link} 
-                    to="/events"
-                    sx={{ 
-                      fontWeight: 'medium',
-                      color: 'text.primary',
-                      '&:hover': { 
-                        backgroundColor: 'rgba(30, 64, 175, 0.05)',
-                        color: 'primary.main'
-                      } 
-                    }}
-                  >
-                    Events
-                  </Button>
-                  <Button 
-                    color="primary" 
-                    component={Link} 
-                    to="/resources"
-                    sx={{ 
-                      fontWeight: 'medium',
-                      color: 'text.primary',
-                      '&:hover': { 
-                        backgroundColor: 'rgba(30, 64, 175, 0.05)',
-                        color: 'primary.main'
-                      } 
-                    }}
-                  >
-                    Resources
-                  </Button>
-                  
-                  <DonateButton
+                {/* Desktop Navigation */}
+                {!isMobile && (
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    {navigationItems.map((item) => (
+                      <Button 
+                        key={item.text}
+                        color="primary" 
+                        component={Link} 
+                        to={item.path}
+                        sx={{ 
+                          fontWeight: 'medium',
+                          color: 'text.primary',
+                          '&:hover': { 
+                            backgroundColor: 'rgba(30, 64, 175, 0.05)',
+                            color: 'primary.main'
+                          } 
+                        }}
+                      >
+                        {item.text}
+                      </Button>
+                    ))}
+                    
+                    <DonateButton
+                      sx={{ ml: 2 }}
+                    >
+                      Donate Now
+                    </DonateButton>
+                  </Box>
+                )}
+
+                {/* Mobile Menu Button */}
+                {isMobile && (
+                  <IconButton
+                    color="inherit"
+                    aria-label="open drawer"
+                    edge="start"
+                    onClick={handleDrawerToggle}
                     sx={{ ml: 2 }}
                   >
-                    Donate Now
-                  </DonateButton>
-                </Box>
+                    <Menu />
+                  </IconButton>
+                )}
               </Toolbar>
             </AppBar>
+
+            {/* Mobile Drawer */}
+            <Drawer
+              variant="temporary"
+              anchor="right"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+                '& .MuiDrawer-paper': { 
+                  boxSizing: 'border-box', 
+                  width: 250,
+                  backgroundColor: 'white'
+                },
+              }}
+            >
+              {drawer}
+            </Drawer>
 
             {/* Main Content */}
             <Box component="main" sx={{ flexGrow: 1 }}>
@@ -353,6 +388,9 @@ function App() {
 
             {/* PWA Install Prompt */}
             <PWAInstallPrompt />
+            
+            {/* Performance Monitor (development only) */}
+            {process.env.NODE_ENV === 'development' && <PerformanceMonitor />}
           </Box>
         </Router>
       </ThemeProvider>

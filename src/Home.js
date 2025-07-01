@@ -1,14 +1,13 @@
 import React from 'react';
-import { Heart, Users, Home as HomeIcon, Gift, ChevronRight, Calendar, BookOpen, Award } from 'lucide-react';
+import { Users, Home as HomeIcon, Gift, ChevronRight, Calendar, BookOpen, Award } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import care4youthLogo from './care4youth-logo.svg';
 import marchEventGroup from './assets/march_event_group.jpg';
 import './Home.css';
 import DonateButton from './components/DonateButton';
 import NewsletterSignup from './components/NewsletterSignup';
 import { Helmet } from 'react-helmet-async';
 
-export default function Home() {
+const Home = React.memo(function Home() {
   const navigate = useNavigate();
 
   const handleLearnMore = () => {
@@ -59,6 +58,7 @@ export default function Home() {
                 <img 
                   src={marchEventGroup} 
                   alt="Care 4 Youth March Event Group" 
+                  loading="lazy"
                   style={{ width: '100%', maxWidth: 400, borderRadius: '1.5rem', boxShadow: '0 8px 32px rgba(30, 64, 175, 0.15)', objectFit: 'cover' }} 
                 />
               </div>
@@ -225,4 +225,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+});
+
+export default Home;
