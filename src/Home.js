@@ -1,10 +1,39 @@
 import React from 'react';
-import { Heart, Users, Home as HomeIcon, Gift, ChevronRight } from 'lucide-react';
+import { Heart, Users, Home as HomeIcon, Gift, ChevronRight, Calendar, BookOpen, Award } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import care4youthLogo from './care4youth-logo.svg';
+import marchEventGroup from './assets/march_event_group.jpg';
 import './Home.css';
+import DonateButton from './components/DonateButton';
+import NewsletterSignup from './components/NewsletterSignup';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate('/about');
+  };
+
+  const handleVolunteer = () => {
+    navigate('/volunteer');
+  };
+
   return (
     <div className="home-container">
+      <Helmet>
+        <title>Care4Youth | Bringing Hope to Children in Need</title>
+        <meta name="description" content="Care4Youth is a nonprofit dedicated to supporting children and families through programs, healthcare, and community support." />
+        <meta property="og:title" content="Care4Youth | Bringing Hope to Children in Need" />
+        <meta property="og:description" content="Support children and families in need. Learn about our programs, donate, or volunteer today!" />
+        <meta property="og:image" content="https://SujayGG.github.io/Care4YouthWebsite/logo192.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://SujayGG.github.io/Care4YouthWebsite/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Care4Youth | Bringing Hope to Children in Need" />
+        <meta name="twitter:description" content="Support children and families in need. Learn about our programs, donate, or volunteer today!" />
+        <meta name="twitter:image" content="https://SujayGG.github.io/Care4YouthWebsite/logo192.png" />
+      </Helmet>
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
@@ -14,21 +43,24 @@ export default function Home() {
                 Bringing Hope to Children in Need
               </h2>
               <p className="hero-description">
-                Every child deserves a chance to smile, laugh, and dream. Join us in creating magical moments and providing essential support for children facing life's greatest challenges.
+                Every child deserves a chance to smile, laugh, and dream. Join us in creating magical moments and providing essential support for children facing life's greatest challenges. (Make img to right a image carosel)
               </p>
               <div className="hero-buttons">
-                <button className="btn-primary">
+                <DonateButton className="btn-primary">
                   Make a Difference Today
-                </button>
-                <button className="btn-secondary">
+                </DonateButton>
+                <button className="btn-secondary" onClick={handleLearnMore}>
                   Learn More
                 </button>
               </div>
             </div>
             <div className="hero-image">
               <div className="image-placeholder">
-                <Heart size={96} className="heart-icon" />
-                <p className="image-text">Children's smiling faces</p>
+                <img 
+                  src={marchEventGroup} 
+                  alt="Care 4 Youth March Event Group" 
+                  style={{ width: '100%', maxWidth: 400, borderRadius: '1.5rem', boxShadow: '0 8px 32px rgba(30, 64, 175, 0.15)', objectFit: 'cover' }} 
+                />
               </div>
             </div>
           </div>
@@ -78,7 +110,7 @@ export default function Home() {
               <p className="program-description">
                 Providing housing, meals, and emotional support to families during their most challenging times.
               </p>
-              <button className="program-link">
+              <button className="program-link" onClick={handleLearnMore}>
                 Learn More <ChevronRight size={16} />
               </button>
             </div>
@@ -91,7 +123,7 @@ export default function Home() {
               <p className="program-description">
                 Making dreams come true through special experiences and gifts that bring smiles and create lasting memories.
               </p>
-              <button className="program-link">
+              <button className="program-link" onClick={handleLearnMore}>
                 Learn More <ChevronRight size={16} />
               </button>
             </div>
@@ -104,10 +136,63 @@ export default function Home() {
               <p className="program-description">
                 Building a network of support through volunteers, mentorship, and community engagement programs.
               </p>
-              <button className="program-link">
+              <button className="program-link" onClick={handleLearnMore}>
                 Learn More <ChevronRight size={16} />
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New Features Section */}
+      <section className="features-section" style={{ padding: '4rem 0', backgroundColor: '#f8fafc' }}>
+        <div className="container">
+          <div className="section-header">
+            <h3 className="section-title">Explore Our Platform</h3>
+            <p className="section-description">
+              Discover our comprehensive resources and community features designed to support families and connect donors.
+            </p>
+          </div>
+
+          <div className="programs-grid">
+            <Link to="/donors" className="program-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="program-icon" style={{ backgroundColor: '#fef3c7' }}>
+                <Award size={32} style={{ color: '#f59e0b' }} />
+              </div>
+              <h4 className="program-title">Donor Recognition Wall</h4>
+              <p className="program-description">
+                Celebrate our generous supporters and see the impact of your donations. Opt-in to be recognized for your contributions.
+              </p>
+              <div className="program-link">
+                View Donors <ChevronRight size={16} />
+              </div>
+            </Link>
+
+            <Link to="/events" className="program-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="program-icon" style={{ backgroundColor: '#dbeafe' }}>
+                <Calendar size={32} style={{ color: '#3b82f6' }} />
+              </div>
+              <h4 className="program-title">Upcoming Events</h4>
+              <p className="program-description">
+                Join our fundraisers, volunteer opportunities, and community events. Register for upcoming activities and make a difference.
+              </p>
+              <div className="program-link">
+                View Events <ChevronRight size={16} />
+              </div>
+            </Link>
+
+            <Link to="/resources" className="program-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="program-icon" style={{ backgroundColor: '#e0e7ff' }}>
+                <BookOpen size={32} style={{ color: '#8b5cf6' }} />
+              </div>
+              <h4 className="program-title">Resource Library</h4>
+              <p className="program-description">
+                Access helpful guides, educational materials, and support resources for families. Download documents and watch informative videos.
+              </p>
+              <div className="program-link">
+                Browse Resources <ChevronRight size={16} />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -123,16 +208,21 @@ export default function Home() {
               Your support makes a real difference in the lives of children and families. Join our mission to spread hope, joy, and healing.
             </p>
             <div className="cta-buttons">
-              <button className="btn-white">
+              <DonateButton className="btn-white">
                 Donate Today
-              </button>
-              <button className="btn-outline">
+              </DonateButton>
+              <button className="btn-outline" onClick={handleVolunteer}>
                 Volunteer With Us
               </button>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Newsletter Signup */}
+      <div style={{ maxWidth: 500, margin: '3rem auto' }}>
+        <NewsletterSignup />
+      </div>
     </div>
   );
 }

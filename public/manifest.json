@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Care4Youth",
+  "name": "Care4Youth - Supporting Children and Families",
+  "description": "A nonprofit organization dedicated to supporting children and families through mental health services, education, and community programs.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +11,76 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1e40af",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["education", "health", "nonprofit"],
+  "screenshots": [
+    {
+      "src": "https://via.placeholder.com/1280x720/1e40af/ffffff?text=Care4Youth+Home",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Care4Youth Homepage"
+    },
+    {
+      "src": "https://via.placeholder.com/750x1334/1e40af/ffffff?text=Care4Youth+Mobile",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Care4Youth Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Donate Now",
+      "short_name": "Donate",
+      "description": "Make a donation to support our mission",
+      "url": "/donate",
+      "icons": [
+        {
+          "src": "https://via.placeholder.com/96x96/10b981/ffffff?text=💝",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Get Help",
+      "short_name": "Help",
+      "description": "Find resources and support for families",
+      "url": "/programs",
+      "icons": [
+        {
+          "src": "https://via.placeholder.com/96x96/3b82f6/ffffff?text=🤝",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Volunteer",
+      "short_name": "Volunteer",
+      "description": "Join our volunteer program",
+      "url": "/volunteer",
+      "icons": [
+        {
+          "src": "https://via.placeholder.com/96x96/f59e0b/ffffff?text=👥",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
 }
