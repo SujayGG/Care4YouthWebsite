@@ -328,7 +328,7 @@ const About = () => {
               {
                 name: 'Ashwin Goel',
                 role: 'Tech Head',
-                img: require('./assets/team/ashwin_goel_board.jpg'),
+                img: require('./assets/team/ashwin_goel_board.jpeg'),
               }
             ].map((member) => (
               <Grid item xs={12} sm={6} md={4} key={member.name}>
@@ -357,7 +357,7 @@ const About = () => {
         </Container>
       </Box>
 
-      {/* Tech Team Section */}
+      {/* Tech Team Section 
       <Box sx={{ background: 'linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%)', py: 8 }}>
         <Container maxWidth="lg">
           <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
@@ -407,7 +407,7 @@ const About = () => {
           </Grid>
         </Container>
       </Box>
-
+      */}
       {/* Placeholder for the rest of the team */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Typography variant="h3" sx={{ fontWeight: 800, color: '#1e40af', mb: 4, textAlign: 'center' }}>
