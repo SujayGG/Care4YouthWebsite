@@ -279,7 +279,7 @@ const About = () => {
           <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
             Meet the Founders
           </Typography>
-          <Grid container spacing={6} justifyContent="center">
+          <Grid container spacing={6} justifyContent="center" sx={{ maxWidth: 1200, mx: 'auto', flexWrap: 'nowrap' }}>
             {[{
               name: 'Kritika Kumar',
               role: 'Founder',
@@ -330,59 +330,52 @@ const About = () => {
                 name: 'Aditi Gaddam',
                 role: 'Chief Executive Officer',
                 img: require('./assets/team/aditi_gaddam_ceo.jpg.jpg'),
-                bio: `Hey everyone! I'm Aditi, a sophomore at Plano East and I am incredibly excited to serve as the CEO of Care 4 Youth. Our team has big hopes going into this year and I am so ready to see them become reality. I can't wait to start our journey and reach the hearts of many, patients and volunteers alike.`
               },
               {
                 name: 'Kritika Kumar',
                 role: 'Chief Operating Officer',
                 img: require('./assets/team/kritika_kumar_coo.jpg.jpg'),
-                bio: `Hi there! My name is Kritika, I'm a sophomore at Plano East and will be serving as the COO at Care4Youth! I am beyond thrilled work with this board, as well as to learn and grow with them. I am excited for everyone to get a insight on what we have planned, to not only serve our community but also our volunteers!`
               },
               {
                 name: 'Aayush Patel',
                 role: 'Chief Financial Officer',
                 img: require('./assets/team/aayush_patel.jpg.jpg'),
-                bio: `Hola amigos! I'm Aayush Patel from Plano East and I'm very excited to be the C4U CFO. I love the concept of increasing student interaction and helping advance the standards in the pediatric healthcare industry. I can't wait to help lead this nonprofit to success and guide the financial part of it!`
               },
               {
                 name: 'Vishi Krishna',
                 role: 'Secretary',
                 img: require('./assets/team/vaishnavi_krishna.jpg.jpg'),
-                bio: `Hey! My name is Vishi Krishna and I am a sophomore at Williams High School. I am so excited to be serving as your Care 4 Youth Secretary and so thankful for this opportunity. I am eager to support this incredible mission towards amplifying a positive environment in the pediatric field!`
               },
               {
                 name: 'Aadi Patel',
                 role: 'Event Planner',
                 img: require('./assets/team/aaditya_patel.jpg.jpg'),
-                bio: `Hey, my name's Aadi Patel and I'm excited to be the event coordinator for Care 4 Youth. I'm a sophomore at Allen High School. In my free time, I enjoy cooking and playing ice hockey. I am especially looking forward to being a part of the team because the goals and values of C4U align with mine and I look forward to helping to educate our community.`
               },
               {
                 name: 'Ashwin Goel',
                 role: 'Tech Head',
                 img: require('./assets/team/ashwin_goel_tech_head.jpg.jpg'),
-                bio: `Hey I'm Ashwin Goel and I'm so excited to be the head of the tech team for Care4Youth! I am a junior at Plano East and I joined Care4Youth because of my passion for making a positive impact on children's experiences in hospitals through innovative technology.`
               }
-            ].map((member, idx) => (
+            ].map((member) => (
               <Grid item xs={12} sm={6} md={4} key={member.name}>
                 <Card
                   sx={{
                     p: 4,
                     borderRadius: 5,
-                    boxShadow: 5,
+                    boxShadow: 4,
                     transition: 'transform 0.2s, box-shadow 0.2s',
                     '&:hover': {
-                      transform: 'scale(1.03)',
-                      boxShadow: 12,
+                      transform: 'scale(1.04)',
+                      boxShadow: 10,
                     },
                     borderTop: '6px solid #f59e0b',
                     display: 'flex', flexDirection: 'column', alignItems: 'center',
                     background: 'white',
                   }}
                 >
-                  <Avatar src={member.img} alt={member.name} sx={{ width: 120, height: 120, mb: 2, boxShadow: 2, border: '3px solid #fef9c3' }} />
+                  <Avatar src={member.img} alt={member.name} sx={{ width: 110, height: 110, mb: 2, boxShadow: 1, border: '3px solid #fef9c3' }} />
                   <Typography variant="h6" sx={{ fontWeight: 800, color: '#1e40af', mb: 0.5 }}>{member.name}</Typography>
-                  <Typography variant="subtitle2" sx={{ color: '#f59e0b', fontWeight: 700, mb: 2, letterSpacing: 1, textTransform: 'uppercase' }}>{member.role}</Typography>
-                  <Typography variant="body2" sx={{ textAlign: 'center', color: '#374151', fontSize: '1.05rem', lineHeight: 1.7 }}>{member.bio}</Typography>
+                  <Typography variant="subtitle2" sx={{ color: '#f59e0b', fontWeight: 600, mb: 1, letterSpacing: 1 }}>{member.role}</Typography>
                 </Card>
               </Grid>
             ))}
