@@ -25,13 +25,13 @@ const Home = React.memo(function Home() {
         <meta name="description" content="Care4Youth is a nonprofit dedicated to supporting children and families through programs, healthcare, and community support." />
         <meta property="og:title" content="Care4Youth | Bringing Hope to Children in Need" />
         <meta property="og:description" content="Support children and families in need. Learn about our programs, donate, or volunteer today!" />
-        <meta property="og:image" content="https://SujayGG.github.io/Care4YouthWebsite/logo192.png" />
+        <meta property="og:image" content="https://SujayGG.github.io/Care4YouthWebsite/care4youth-logo.svg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://SujayGG.github.io/Care4YouthWebsite/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Care4Youth | Bringing Hope to Children in Need" />
         <meta name="twitter:description" content="Support children and families in need. Learn about our programs, donate, or volunteer today!" />
-        <meta name="twitter:image" content="https://SujayGG.github.io/Care4YouthWebsite/logo192.png" />
+        <meta name="twitter:image" content="https://SujayGG.github.io/Care4YouthWebsite/care4youth-logo.svg" />
       </Helmet>
       {/* Hero Section */}
       <section className="hero-section">
@@ -201,18 +201,16 @@ const Home = React.memo(function Home() {
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
-            <h3 className="cta-title">
-              Every Child Deserves to Smile
-            </h3>
+            <h3 className="cta-title">Join Us in Making a Difference</h3>
             <p className="cta-description">
-              Your support makes a real difference in the lives of children and families. Join our mission to spread hope, joy, and healing.
+              Every contribution, no matter how small, helps us bring hope and joy to children who need it most. Together, we can create lasting positive change.
             </p>
             <div className="cta-buttons">
               <DonateButton className="btn-white">
-                Donate Today
+                Donate Now
               </DonateButton>
               <button className="btn-outline" onClick={handleVolunteer}>
-                Volunteer With Us
+                Volunteer Today
               </button>
             </div>
           </div>
@@ -220,9 +218,7 @@ const Home = React.memo(function Home() {
       </section>
 
       {/* Newsletter Signup */}
-      <div style={{ maxWidth: 500, margin: '3rem auto' }}>
-        <NewsletterSignup />
-      </div>
+      <NewsletterSignup />
     </div>
   );
 });

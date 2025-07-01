@@ -16,32 +16,6 @@ import { Heart, Users, Target, Award, Star, Instagram } from 'lucide-react';
 import DonateButton from './components/DonateButton';
 import { Helmet } from 'react-helmet-async';
 
-const teamMembers = [
-  {
-    name: "Sarah Johnson",
-    role: "Executive Director",
-    bio: "Dedicated to creating positive change in children's lives for over 15 years.",
-    avatar: "SJ"
-  },
-  {
-    name: "Michael Chen",
-    role: "Program Director",
-    bio: "Leading our community programs and volunteer coordination efforts.",
-    avatar: "MC"
-  },
-  {
-    name: "Dr. Emily Rodriguez",
-    role: "Medical Director",
-    bio: "Ensuring every child receives the healthcare they need and deserve.",
-    avatar: "ER"
-  },
-  {
-    name: "David Thompson",
-    role: "Community Outreach",
-    bio: "Building partnerships and connecting families with vital resources.",
-    avatar: "DT"
-  }
-];
 
 const values = [
   {

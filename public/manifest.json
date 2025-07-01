@@ -4,18 +4,18 @@
   "description": "A nonprofit organization dedicated to supporting children and families through mental health services, education, and community programs.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "care4youth-logo.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "care4youth-logo.svg",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "care4youth-logo.svg",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
