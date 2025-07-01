@@ -1,15 +1,29 @@
 {
   "files": {
     "main.css": "/Care4YouthWebsite/static/css/main.b0af69a1.css",
-    "main.js": "/Care4YouthWebsite/static/js/main.30a20888.js",
+    "main.js": "/Care4YouthWebsite/static/js/main.d7b70683.js",
     "static/js/453.934a235b.chunk.js": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js",
+    "static/media/vaishnavi_krishna.jpg.jpg": "/Care4YouthWebsite/static/media/vaishnavi_krishna.jpg.6e0a1f07f6c338e308bd.jpg",
+    "static/media/aayush_patel.jpg.jpg": "/Care4YouthWebsite/static/media/aayush_patel.jpg.8ac8bfe53e811fc58c1a.jpg",
+    "static/media/kritika_kumar_coo.jpg.jpg": "/Care4YouthWebsite/static/media/kritika_kumar_coo.jpg.181f2222cc3e1a1ab8d0.jpg",
+    "static/media/aaditya_patel.jpg.jpg": "/Care4YouthWebsite/static/media/aaditya_patel.jpg.bc49b579f51e7bfbcbe9.jpg",
+    "static/media/aditi_gaddam_ceo.jpg.jpg": "/Care4YouthWebsite/static/media/aditi_gaddam_ceo.jpg.c8acffd17a980d80142b.jpg",
+    "static/media/ashwin_goel_tech_head.jpg.jpg": "/Care4YouthWebsite/static/media/ashwin_goel_tech_head.jpg.d251e327ac29cd41f587.jpg",
+    "static/media/march_event_group.jpg": "/Care4YouthWebsite/static/media/march_event_group.8e92da918f545c1c7a23.jpg",
+    "static/media/aditi_gaddam_founder.jpg": "/Care4YouthWebsite/static/media/aditi_gaddam_founder.8c658222711826314ea3.jpg",
+    "static/media/kritika_kumar_founder.jpg": "/Care4YouthWebsite/static/media/kritika_kumar_founder.0416b68faa935a3523eb.jpg",
+    "static/media/ashwin_goel.jpg.jpg": "/Care4YouthWebsite/static/media/ashwin_goel.jpg.020ae925391b162fef01.jpg",
+    "static/media/shriyans_gupta.jpg.jpg": "/Care4YouthWebsite/static/media/shriyans_gupta.jpg.1d35d60df27f72ca9767.jpg",
+    "static/media/sujay_gonchigar.jpg.jpg": "/Care4YouthWebsite/static/media/sujay_gonchigar.jpg.bc1f5fd036f95c3f303e.jpg",
+    "static/media/goutham_ronanki.jpg.jpg": "/Care4YouthWebsite/static/media/goutham_ronanki.jpg.d7c6eb64d5a4f63aab96.jpg",
     "index.html": "/Care4YouthWebsite/index.html",
+    "static/media/care4youth-logo.svg": "/Care4YouthWebsite/static/media/care4youth-logo.39a0852a9709e555bef78727e8e526c2.svg",
     "main.b0af69a1.css.map": "/Care4YouthWebsite/static/css/main.b0af69a1.css.map",
-    "main.30a20888.js.map": "/Care4YouthWebsite/static/js/main.30a20888.js.map",
+    "main.d7b70683.js.map": "/Care4YouthWebsite/static/js/main.d7b70683.js.map",
     "453.934a235b.chunk.js.map": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0af69a1.css",
-    "static/js/main.30a20888.js"
+    "static/js/main.d7b70683.js"
   ]
 }
