@@ -303,32 +303,32 @@ const About = () => {
               {
                 name: 'Aditi Gaddam',
                 role: 'Chief Executive Officer',
-                img: require('./assets/team/aditi_gaddam_ceo.jpg.jpg'),
+                img: require('./assets/team/aditi_gaddam_board.jpeg'),
               },
               {
                 name: 'Kritika Kumar',
                 role: 'Chief Operating Officer',
-                img: require('./assets/team/kritika_kumar_coo.jpg.jpg'),
+                img: require('./assets/team/kritika_kumar_board.jpeg'),
               },
               {
                 name: 'Aayush Patel',
                 role: 'Chief Financial Officer',
-                img: require('./assets/team/aayush_patel.jpg.jpg'),
+                img: require('./assets/team/aayush_patel_board.jpeg'),
               },
               {
                 name: 'Vishi Krishna',
                 role: 'Secretary',
-                img: require('./assets/team/vaishnavi_krishna.jpg.jpg'),
+                img: require('./assets/team/vishi_krishna.jpeg'),
               },
               {
                 name: 'Aadi Patel',
                 role: 'Event Planner',
-                img: require('./assets/team/aaditya_patel.jpg.jpg'),
+                img: require('./assets/team/aadi_patel.jpeg'),
               },
               {
                 name: 'Ashwin Goel',
                 role: 'Tech Head',
-                img: require('./assets/team/ashwin_goel_tech_head.jpg.jpg'),
+                img: require('./assets/team/ashwin_goel_board.jpg'),
               }
             ].map((member) => (
               <Grid item xs={12} sm={6} md={4} key={member.name}>
@@ -367,7 +367,7 @@ const About = () => {
             {[
               {
                 name: 'Ashwin Goel',
-                img: require('./assets/team/ashwin_goel.jpg.jpg'),
+                img: require('./assets/team/ashwin_goel_tech_team_head.jpg'),
               },
               {
                 name: 'Shriyans Gupta',
