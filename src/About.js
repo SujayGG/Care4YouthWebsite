@@ -257,12 +257,12 @@ const About = () => {
             {[{
               name: 'Kritika Kumar',
               role: 'Founder',
-              img: require('./assets/team/kritika_kumar_founder.jpg'),
+              img: require('./assets/team/kritika_kumar_founder.jpeg'),
               bio: `Hi there! My name is Kritika Kumar and I am one of your founders are Care 4 Youth! Through this nonprofit, my mission is work with many communities, hospitals, and volunteers to not only amplify the pediatric environment but also meet many dedicated individuals along the way! Not only am I committed to the cause, I am thrilled to see how big C4U can become and one day be something that many patients enjoy being a part of due to its engaging interactions and life-long lessons!`
             }, {
               name: 'Aditi Gaddam',
               role: 'Founder',
-              img: require('./assets/team/aditi_gaddam_founder.jpg'),
+              img: require('./assets/team/aditi_gaddam_founder.jpeg'),
               bio: `Hey everyone! I'm Aditi Gaddam, a co-founder of Care 4 Youth. Through this nonprofit, my mission is to help enhance pediatric hospital environments through creativity, resources, and interaction. Throughout this year, the team and I will work hard to organize events, collaborate with volunteers and see visible change in community hospitals and beyond. I am so excited to serve as a leader for this organization and work with a growing team to reach our goals!`
             }].map((member, idx) => (
               <Grid item xs={12} sm={6} key={member.name}>
