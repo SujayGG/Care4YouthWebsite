@@ -1,29 +1,25 @@
 {
   "files": {
-    "main.css": "/Care4YouthWebsite/static/css/main.324dee12.css",
-    "main.js": "/Care4YouthWebsite/static/js/main.a7ddf960.js",
+    "main.css": "/Care4YouthWebsite/static/css/main.11e954cd.css",
+    "main.js": "/Care4YouthWebsite/static/js/main.1cdeddcb.js",
     "static/js/453.934a235b.chunk.js": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js",
-    "static/media/vaishnavi_krishna.jpg.jpg": "/Care4YouthWebsite/static/media/vaishnavi_krishna.jpg.6e0a1f07f6c338e308bd.jpg",
-    "static/media/aayush_patel.jpg.jpg": "/Care4YouthWebsite/static/media/aayush_patel.jpg.8ac8bfe53e811fc58c1a.jpg",
-    "static/media/kritika_kumar_coo.jpg.jpg": "/Care4YouthWebsite/static/media/kritika_kumar_coo.jpg.181f2222cc3e1a1ab8d0.jpg",
-    "static/media/aaditya_patel.jpg.jpg": "/Care4YouthWebsite/static/media/aaditya_patel.jpg.bc49b579f51e7bfbcbe9.jpg",
-    "static/media/aditi_gaddam_ceo.jpg.jpg": "/Care4YouthWebsite/static/media/aditi_gaddam_ceo.jpg.c8acffd17a980d80142b.jpg",
-    "static/media/ashwin_goel_tech_head.jpg.jpg": "/Care4YouthWebsite/static/media/ashwin_goel_tech_head.jpg.d251e327ac29cd41f587.jpg",
+    "static/media/ashwin_goel_board.jpeg": "/Care4YouthWebsite/static/media/ashwin_goel_board.35f4b9bcb023037adba7.jpeg",
+    "static/media/vishi_krishna.jpeg": "/Care4YouthWebsite/static/media/vishi_krishna.bedac07a360816def48f.jpeg",
+    "static/media/kritika_kumar_founder.jpeg": "/Care4YouthWebsite/static/media/kritika_kumar_founder.6563d49776a1d834816f.jpeg",
+    "static/media/aayush_patel_board.jpeg": "/Care4YouthWebsite/static/media/aayush_patel_board.f8f3955f0434f356ab89.jpeg",
+    "static/media/aadi_patel.jpeg": "/Care4YouthWebsite/static/media/aadi_patel.37b107e5115ef3b70f81.jpeg",
+    "static/media/kritika_kumar_board.jpeg": "/Care4YouthWebsite/static/media/kritika_kumar_board.093b9c49446c6f96e3bf.jpeg",
+    "static/media/aditi_gaddam_founder.jpeg": "/Care4YouthWebsite/static/media/aditi_gaddam_founder.73948ac4b0a09cf00e2d.jpeg",
     "static/media/march_event_group.jpg": "/Care4YouthWebsite/static/media/march_event_group.8e92da918f545c1c7a23.jpg",
-    "static/media/aditi_gaddam_founder.jpg": "/Care4YouthWebsite/static/media/aditi_gaddam_founder.8c658222711826314ea3.jpg",
-    "static/media/kritika_kumar_founder.jpg": "/Care4YouthWebsite/static/media/kritika_kumar_founder.0416b68faa935a3523eb.jpg",
-    "static/media/ashwin_goel.jpg.jpg": "/Care4YouthWebsite/static/media/ashwin_goel.jpg.020ae925391b162fef01.jpg",
-    "static/media/shriyans_gupta.jpg.jpg": "/Care4YouthWebsite/static/media/shriyans_gupta.jpg.1d35d60df27f72ca9767.jpg",
-    "static/media/sujay_gonchigar.jpg.jpg": "/Care4YouthWebsite/static/media/sujay_gonchigar.jpg.bc1f5fd036f95c3f303e.jpg",
-    "static/media/goutham_ronanki.jpg.jpg": "/Care4YouthWebsite/static/media/goutham_ronanki.jpg.d7c6eb64d5a4f63aab96.jpg",
+    "static/media/aditi_gaddam_board.jpeg": "/Care4YouthWebsite/static/media/aditi_gaddam_board.7770a84527338fd3cb48.jpeg",
     "index.html": "/Care4YouthWebsite/index.html",
     "static/media/care4youth-logo.svg": "/Care4YouthWebsite/static/media/care4youth-logo.39a0852a9709e555bef78727e8e526c2.svg",
-    "main.324dee12.css.map": "/Care4YouthWebsite/static/css/main.324dee12.css.map",
-    "main.a7ddf960.js.map": "/Care4YouthWebsite/static/js/main.a7ddf960.js.map",
+    "main.11e954cd.css.map": "/Care4YouthWebsite/static/css/main.11e954cd.css.map",
+    "main.1cdeddcb.js.map": "/Care4YouthWebsite/static/js/main.1cdeddcb.js.map",
     "453.934a235b.chunk.js.map": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.324dee12.css",
-    "static/js/main.a7ddf960.js"
+    "static/css/main.11e954cd.css",
+    "static/js/main.1cdeddcb.js"
   ]
 }
