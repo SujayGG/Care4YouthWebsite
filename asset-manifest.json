@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Care4YouthWebsite/static/css/main.b0af69a1.css",
+    "main.css": "/Care4YouthWebsite/static/css/main.a43e46f0.css",
     "main.js": "/Care4YouthWebsite/static/js/main.d7b70683.js",
     "static/js/453.934a235b.chunk.js": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js",
     "static/media/vaishnavi_krishna.jpg.jpg": "/Care4YouthWebsite/static/media/vaishnavi_krishna.jpg.6e0a1f07f6c338e308bd.jpg",
@@ -18,12 +18,12 @@
     "static/media/goutham_ronanki.jpg.jpg": "/Care4YouthWebsite/static/media/goutham_ronanki.jpg.d7c6eb64d5a4f63aab96.jpg",
     "index.html": "/Care4YouthWebsite/index.html",
     "static/media/care4youth-logo.svg": "/Care4YouthWebsite/static/media/care4youth-logo.39a0852a9709e555bef78727e8e526c2.svg",
-    "main.b0af69a1.css.map": "/Care4YouthWebsite/static/css/main.b0af69a1.css.map",
+    "main.a43e46f0.css.map": "/Care4YouthWebsite/static/css/main.a43e46f0.css.map",
     "main.d7b70683.js.map": "/Care4YouthWebsite/static/js/main.d7b70683.js.map",
     "453.934a235b.chunk.js.map": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0af69a1.css",
+    "static/css/main.a43e46f0.css",
     "static/js/main.d7b70683.js"
   ]
 }
