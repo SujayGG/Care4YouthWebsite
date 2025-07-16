@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Home as HomeIcon, Gift, ChevronRight, Calendar, BookOpen, Award } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import marchEventGroup from './assets/march_event_group.jpg';
+import marchEventGroup from './assets/march_group.jpg';
 import './Home.css';
 import DonateButton from './components/DonateButton';
 import NewsletterSignup from './components/NewsletterSignup';
