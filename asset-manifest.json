@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Care4YouthWebsite/static/css/main.0524e052.css",
-    "main.js": "/Care4YouthWebsite/static/js/main.26d81319.js",
+    "main.css": "/Care4YouthWebsite/static/css/main.11e954cd.css",
+    "main.js": "/Care4YouthWebsite/static/js/main.08a35677.js",
     "static/js/453.934a235b.chunk.js": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js",
     "static/media/march_group.jpg": "/Care4YouthWebsite/static/media/march_group.7bb1a7ed155e97d3a8cd.jpg",
     "static/media/ashwin_goel_board.jpeg": "/Care4YouthWebsite/static/media/ashwin_goel_board.35f4b9bcb023037adba7.jpeg",
@@ -12,18 +12,14 @@
     "static/media/kritika_kumar_board.jpeg": "/Care4YouthWebsite/static/media/kritika_kumar_board.093b9c49446c6f96e3bf.jpeg",
     "static/media/aditi_gaddam_founder.jpeg": "/Care4YouthWebsite/static/media/aditi_gaddam_founder.73948ac4b0a09cf00e2d.jpeg",
     "static/media/aditi_gaddam_board.jpeg": "/Care4YouthWebsite/static/media/aditi_gaddam_board.7770a84527338fd3cb48.jpeg",
-    "static/media/slick.svg": "/Care4YouthWebsite/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Care4YouthWebsite/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Care4YouthWebsite/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Care4YouthWebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Care4YouthWebsite/index.html",
     "static/media/care4youth-logo.svg": "/Care4YouthWebsite/static/media/care4youth-logo.39a0852a9709e555bef78727e8e526c2.svg",
-    "main.0524e052.css.map": "/Care4YouthWebsite/static/css/main.0524e052.css.map",
-    "main.26d81319.js.map": "/Care4YouthWebsite/static/js/main.26d81319.js.map",
+    "main.11e954cd.css.map": "/Care4YouthWebsite/static/css/main.11e954cd.css.map",
+    "main.08a35677.js.map": "/Care4YouthWebsite/static/js/main.08a35677.js.map",
     "453.934a235b.chunk.js.map": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0524e052.css",
-    "static/js/main.26d81319.js"
+    "static/css/main.11e954cd.css",
+    "static/js/main.08a35677.js"
   ]
 }
