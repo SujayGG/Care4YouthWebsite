@@ -42,7 +42,7 @@ const Home = React.memo(function Home() {
                 Bringing Hope to Children in Need
               </h2>
               <p className="hero-description">
-                Every child deserves a chance to smile, laugh, and dream. Join us in creating magical moments and providing essential support for children facing life's greatest challenges. (Make img to right a image carosel)
+                Every child deserves a chance to smile, laugh, and dream. Join us in creating magical moments and providing essential support for children facing life's greatest challenges.
               </p>
               <div className="hero-buttons">
                 <DonateButton className="btn-primary">
