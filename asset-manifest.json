@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Care4YouthWebsite/static/css/main.11e954cd.css",
-    "main.js": "/Care4YouthWebsite/static/js/main.08a35677.js",
+    "main.js": "/Care4YouthWebsite/static/js/main.3645da2b.js",
     "static/js/453.934a235b.chunk.js": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js",
     "static/media/march_group.jpg": "/Care4YouthWebsite/static/media/march_group.7bb1a7ed155e97d3a8cd.jpg",
     "static/media/ashwin_goel_board.jpeg": "/Care4YouthWebsite/static/media/ashwin_goel_board.35f4b9bcb023037adba7.jpeg",
@@ -15,11 +15,11 @@
     "index.html": "/Care4YouthWebsite/index.html",
     "static/media/care4youth-logo.svg": "/Care4YouthWebsite/static/media/care4youth-logo.39a0852a9709e555bef78727e8e526c2.svg",
     "main.11e954cd.css.map": "/Care4YouthWebsite/static/css/main.11e954cd.css.map",
-    "main.08a35677.js.map": "/Care4YouthWebsite/static/js/main.08a35677.js.map",
+    "main.3645da2b.js.map": "/Care4YouthWebsite/static/js/main.3645da2b.js.map",
     "453.934a235b.chunk.js.map": "/Care4YouthWebsite/static/js/453.934a235b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11e954cd.css",
-    "static/js/main.08a35677.js"
+    "static/js/main.3645da2b.js"
   ]
 }
