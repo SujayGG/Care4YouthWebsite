@@ -439,15 +439,352 @@ const About = () => {
     </Grid>
   </Container>
 </Box>
-      {/* Placeholder for the rest of the team */}
-      <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h3" sx={{ fontWeight: 800, color: '#1e40af', mb: 4, textAlign: 'center' }}>
-          The Rest of Our Team
-        </Typography>
-        <Typography variant="body1" sx={{ textAlign: 'center', color: '#374151' }}>
-          More team members coming soon! Stay tuned for updates.
-        </Typography>
-      </Container>
+{/* Finance Team Section */}
+<Box sx={{ background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)', py: 8 }}>
+  <Container maxWidth="lg">
+    <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
+      Finance Team
+    </Typography>
+    <Grid container spacing={5} justifyContent="center">
+      {[
+        {
+          name: 'Aayush Patel',
+          img: require('./assets/team/aayush_patel_finance_team.jpeg'),
+        },
+        {
+          name: 'Lakshman Vennamaneni',
+          img: require('./assets/team/lakshman_venn.jpeg'),
+        },
+        {
+          name: 'William Presetyo',
+          img: require('./assets/team/william_presetyo.jpeg'),
+        },
+        {
+          name: 'Nikum Krishnaswamy',
+          img: require('./assets/team/nikum_krishna.jpeg'),
+        }
+      ].map((member) => (
+        <Grid item xs={12} sm={6} md={3} key={member.name}>
+          <Card
+            sx={{
+              p: 4,
+              borderRadius: 5,
+              boxShadow: 4,
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              '&:hover': {
+                transform: 'scale(1.04)',
+                boxShadow: 10,
+              },
+              borderTop: '6px solid #16a34a',
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              background: 'white',
+              height: '100%',
+              minHeight: 250,
+            }}
+          >
+            <Avatar 
+              src={member.img} 
+              alt={member.name} 
+              sx={{ 
+                width: 110, 
+                height: 110, 
+                mb: 2, 
+                boxShadow: 1, 
+                border: '3px solid #dcfce7' 
+              }} 
+            />
+            <Typography variant="h6" sx={{ 
+              fontWeight: 800, 
+              color: '#1e40af', 
+              mb: 0.5,
+              textAlign: 'center',
+              minHeight: '32px',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              {member.name}
+            </Typography>
+            <Typography variant="subtitle2" sx={{ 
+              color: '#16a34a', 
+              fontWeight: 600, 
+              mb: 1, 
+              letterSpacing: 1,
+              textAlign: 'center'
+            }}>
+              Finance Team
+            </Typography>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
+  </Container>
+</Box>
+{/* Outreach Team Section */}
+<Box sx={{ background: 'linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%)', py: 8 }}>
+  <Container maxWidth="lg">
+    <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
+      Outreach Team
+    </Typography>
+    <Grid container spacing={5} justifyContent="center">
+      {[
+        {
+          name: 'Ali Ghadiali',
+          img: require('./assets/team/ali_ghad.jpeg'),
+        },
+        {
+          name: 'Sarah Huq',
+          img: require('./assets/team/sarah_huq.jpeg'),
+        },
+        {
+          name: 'Roheemat Olaiya',
+          img: require('./assets/team/roheemat_olaiya.jpeg'),
+        },
+        {
+          name: 'Leah Ghebermicael',
+          img: require('./assets/team/leah_gheb.jpeg'),
+        }
+      ].map((member) => (
+        <Grid item xs={12} sm={6} md={3} key={member.name}>
+          <Card
+            sx={{
+              p: 4,
+              borderRadius: 5,
+              boxShadow: 4,
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              '&:hover': {
+                transform: 'scale(1.04)',
+                boxShadow: 10,
+              },
+              borderTop: '6px solid #0ea5e9',
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              background: 'white',
+              height: '100%',
+              minHeight: 250,
+            }}
+          >
+            <Avatar 
+              src={member.img} 
+              alt={member.name} 
+              sx={{ 
+                width: 110, 
+                height: 110, 
+                mb: 2, 
+                boxShadow: 1, 
+                border: '3px solid #b3e5fc',
+                mx: 'auto',
+                '& img': {
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                }
+              }} 
+            />
+            <Typography variant="h6" sx={{ 
+              fontWeight: 800, 
+              color: '#1e40af', 
+              mb: 0.5,
+              textAlign: 'center',
+              minHeight: '32px',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              {member.name}
+            </Typography>
+            <Typography variant="subtitle2" sx={{ 
+              color: '#0ea5e9', 
+              fontWeight: 600, 
+              mb: 1, 
+              letterSpacing: 1,
+              textAlign: 'center'
+            }}>
+              Outreach Team
+            </Typography>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
+  </Container>
+</Box>
+
+{/* Creativity Team Section */}
+<Box sx={{ background: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)', py: 8 }}>
+  <Container maxWidth="lg">
+    <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
+      Creativity Team
+    </Typography>
+    <Grid container spacing={5} justifyContent="center">
+      {[
+        {
+          name: 'Mishka Rajput',
+          img: require('./assets/team/default_icon.jpeg'),
+        },
+        {
+          name: 'Natalia Chavez',
+          img: require('./assets/team/natalia_chavez.jpeg'),
+        },
+        {
+          name: 'Anna Martin',
+          img: require('./assets/team/anna_martin.jpeg'),
+        },
+        {
+          name: 'Grace Jobe',
+          img: require('./assets/team/grace_jobe.jpeg'),
+        }
+      ].map((member) => (
+        <Grid item xs={12} sm={6} md={3} key={member.name}>
+          <Card
+            sx={{
+              p: 4,
+              borderRadius: 5,
+              boxShadow: 4,
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              '&:hover': {
+                transform: 'scale(1.04)',
+                boxShadow: 10,
+              },
+              borderTop: '6px solid #ec4899',
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              background: 'white',
+              height: '100%',
+              minHeight: 250,
+            }}
+          >
+            <Avatar 
+              src={member.img} 
+              alt={member.name} 
+              sx={{ 
+                width: 110, 
+                height: 110, 
+                mb: 2, 
+                boxShadow: 1, 
+                border: '3px solid #fbcfe8',
+                mx: 'auto',
+                '& img': {
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                }
+              }} 
+            />
+            <Typography variant="h6" sx={{ 
+              fontWeight: 800, 
+              color: '#1e40af', 
+              mb: 0.5,
+              textAlign: 'center',
+              minHeight: '32px',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              {member.name}
+            </Typography>
+            <Typography variant="subtitle2" sx={{ 
+              color: '#ec4899', 
+              fontWeight: 600, 
+              mb: 1, 
+              letterSpacing: 1,
+              textAlign: 'center'
+            }}>
+              Creativity Team
+            </Typography>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
+  </Container>
+</Box>
+
+{/* Advocacy Team Section */}
+<Box sx={{ background: 'linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%)', py: 8 }}>
+  <Container maxWidth="lg">
+    <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
+      Advocacy Team
+    </Typography>
+    <Grid container spacing={5} justifyContent="center">
+      {[
+        {
+          name: 'Thi Dang',
+          img: require('./assets/team/default_icon.jpeg'),
+        },
+        {
+          name: 'Ishveer Randhawa',
+          img: require('./assets/team/ishveer_randhawa.jpeg'),
+        },
+        {
+          name: 'Saket Shant',
+          img: require('./assets/team/saket_shant.jpeg'),
+        },
+        {
+          name: 'Saesha Mainali',
+          img: require('./assets/team/saesha_mainali.jpeg'),
+        }
+      ].map((member) => (
+        <Grid item xs={12} sm={6} md={3} key={member.name}>
+          <Card
+            sx={{
+              p: 4,
+              borderRadius: 5,
+              boxShadow: 4,
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              '&:hover': {
+                transform: 'scale(1.04)',
+                boxShadow: 10,
+              },
+              borderTop: '6px solid #8b5cf6',
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              background: 'white',
+              height: '100%',
+              minHeight: 250,
+            }}
+          >
+            <Avatar 
+              src={member.img} 
+              alt={member.name} 
+              sx={{ 
+                width: 110, 
+                height: 110, 
+                mb: 2, 
+                boxShadow: 1, 
+                border: '3px solid #c4b5fd',
+                mx: 'auto',
+                '& img': {
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                }
+              }} 
+            />
+            <Typography variant="h6" sx={{ 
+              fontWeight: 800, 
+              color: '#1e40af', 
+              mb: 0.5,
+              textAlign: 'center',
+              minHeight: '32px',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              {member.name}
+            </Typography>
+            <Typography variant="subtitle2" sx={{ 
+              color: '#8b5cf6', 
+              fontWeight: 600, 
+              mb: 1, 
+              letterSpacing: 1,
+              textAlign: 'center'
+            }}>
+              Advocacy Team
+            </Typography>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
+  </Container>
+</Box>
+
 
       {/* Our Values */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
