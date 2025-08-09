@@ -357,57 +357,72 @@ const About = () => {
         </Container>
       </Box>
 
-      {/* Tech Team Section 
-      <Box sx={{ background: 'linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%)', py: 8 }}>
-        <Container maxWidth="lg">
-          <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
-            Tech Team
-          </Typography>
-          <Grid container spacing={5} justifyContent="center">
-            {[
-              {
-                name: 'Ashwin Goel',
-                img: require('./assets/team/ashwin_goel_tech_team_head.jpg'),
+{/* Tech Team Section */}
+<Box sx={{ background: 'linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%)', py: 8 }}>
+  <Container maxWidth="lg">
+    <Typography variant="h3" sx={{ fontWeight: 900, color: '#1e40af', mb: 6, textAlign: 'center', letterSpacing: 2 }}>
+      Tech Team
+    </Typography>
+    <Grid container spacing={5} justifyContent="center">
+      {[
+        {
+          name: 'Ashwin Goel',
+          img: require('./assets/team/ashwin_goel_tech_team_head.jpg'),
+        },
+        {
+          name: 'Shriyans Gupta',
+          img: require('./assets/team/shriyans_gupta.jpg'),
+        },
+        {
+          name: 'Goutham Ronanki',
+          img: require('./assets/team/default_icon.jpg'),
+        },
+        {
+          name: 'Sujay Gonchigar',
+          img: require('./assets/team/sujay_gonchigar.jpg'),
+        }
+      ].map((member) => (
+        <Grid item xs={12} sm={6} md={3} key={member.name}>
+          <Card
+            sx={{
+              p: 4,
+              borderRadius: 5,
+              boxShadow: 4,
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              '&:hover': {
+                transform: 'scale(1.04)',
+                boxShadow: 10,
               },
-              {
-                name: 'Shriyans Gupta',
-                img: require('./assets/team/shriyans_gupta.jpg.jpg'),
-              },
-              {
-                name: 'Goutham Ronanki',
-                img: require('./assets/team/goutham_ronanki.jpg.jpg'),
-              },
-              {
-                name: 'Sujay Gonchigar',
-                img: require('./assets/team/sujay_gonchigar.jpg.jpg'),
-              }
-            ].map((member) => (
-              <Grid item xs={12} sm={6} md={3} key={member.name}>
-                <Card
-                  sx={{
-                    p: 4,
-                    borderRadius: 5,
-                    boxShadow: 4,
-                    transition: 'transform 0.2s, box-shadow 0.2s',
-                    '&:hover': {
-                      transform: 'scale(1.04)',
-                      boxShadow: 10,
-                    },
-                    borderTop: '6px solid #1e40af',
-                    display: 'flex', flexDirection: 'column', alignItems: 'center',
-                    background: 'white',
-                  }}
-                >
-                  <Avatar src={member.img} alt={member.name} sx={{ width: 110, height: 110, mb: 2, boxShadow: 1, border: '3px solid #e0e7ff' }} />
-                  <Typography variant="h6" sx={{ fontWeight: 800, color: '#1e40af', mb: 0.5 }}>{member.name}</Typography>
-                  <Typography variant="subtitle2" sx={{ color: '#64748b', fontWeight: 600, mb: 1, letterSpacing: 1 }}>Tech Team</Typography>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
-      */}
+              borderTop: '6px solid #1e40af',
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center',
+              background: 'white',
+            }}
+          >
+            <Avatar 
+              src={member.img} 
+              alt={member.name} 
+              sx={{ 
+                width: 110, 
+                height: 110, 
+                mb: 2, 
+                boxShadow: 1, 
+                border: '3px solid #e0e7ff' 
+              }} 
+            />
+            <Typography variant="h6" sx={{ fontWeight: 800, color: '#1e40af', mb: 0.5 }}>
+              {member.name}
+            </Typography>
+            <Typography variant="subtitle2" sx={{ color: '#64748b', fontWeight: 600, mb: 1, letterSpacing: 1 }}>
+              Tech Team
+            </Typography>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
+  </Container>
+</Box>
       {/* Placeholder for the rest of the team */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Typography variant="h3" sx={{ fontWeight: 800, color: '#1e40af', mb: 4, textAlign: 'center' }}>
