@@ -327,7 +327,7 @@ const About = () => {
               },
               {
                 name: 'Ashwin Goel',
-                role: 'Tech Head',
+                role: 'Tech Team Lead',
                 img: require('./assets/team/ashwin_goel_board.jpeg'),
               }
             ].map((member) => (
@@ -367,19 +367,19 @@ const About = () => {
       {[
         {
           name: 'Ashwin Goel',
-          img: require('./assets/team/ashwin_goel_tech_team_head.jpg'),
+          img: require('./assets/team/ashwin_goel_tech_team_head.jpeg'),
         },
         {
           name: 'Shriyans Gupta',
-          img: require('./assets/team/shriyans_gupta.jpg'),
+          img: require('./assets/team/shriyans_gupta.JPEG'),
         },
         {
           name: 'Goutham Ronanki',
-          img: require('./assets/team/default_icon.jpg'),
+          img: require('./assets/team/default_icon.jpeg'),
         },
         {
           name: 'Sujay Gonchigar',
-          img: require('./assets/team/sujay_gonchigar.jpg'),
+          img: require('./assets/team/default_icon.jpeg'),
         }
       ].map((member) => (
         <Grid item xs={12} sm={6} md={3} key={member.name}>
@@ -398,6 +398,8 @@ const About = () => {
               flexDirection: 'column', 
               alignItems: 'center',
               background: 'white',
+              height: '100%',
+              minHeight: 250,
             }}
           >
             <Avatar 
@@ -411,10 +413,24 @@ const About = () => {
                 border: '3px solid #e0e7ff' 
               }} 
             />
-            <Typography variant="h6" sx={{ fontWeight: 800, color: '#1e40af', mb: 0.5 }}>
+            <Typography variant="h6" sx={{ 
+              fontWeight: 800, 
+              color: '#1e40af', 
+              mb: 0.5,
+              textAlign: 'center',
+              minHeight: '32px',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
               {member.name}
             </Typography>
-            <Typography variant="subtitle2" sx={{ color: '#64748b', fontWeight: 600, mb: 1, letterSpacing: 1 }}>
+            <Typography variant="subtitle2" sx={{ 
+              color: '#64748b', 
+              fontWeight: 600, 
+              mb: 1, 
+              letterSpacing: 1,
+              textAlign: 'center'
+            }}>
               Tech Team
             </Typography>
           </Card>
